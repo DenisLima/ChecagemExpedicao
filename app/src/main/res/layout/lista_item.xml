@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/getdata"
+        android:layout_below="@+id/btn_carrega" />
+    <Button
+        android:id="@+id/getdata"
+        android:layout_width="110sp"
+        android:layout_height="wrap_content"
+        android:text="VOLTAR"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="110sp"
+        android:layout_height="wrap_content"
+        android:text="SAIR"
+        android:id="@+id/btnSair"
+        android:layout_below="@+id/list"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="110sp"
+        android:layout_height="wrap_content"
+        android:text="CHECAR"
+        android:id="@+id/checar"
+        android:layout_below="@+id/list"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="NumOs"
+        android:id="@+id/txt_os"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ff42b1fa"
+        android:layout_alignBottom="@+id/btn_carrega"
+        android:textAlignment="center"
+        android:paddingTop="10dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carrega OS"
+        android:id="@+id/btn_carrega"
+        android:layout_toEndOf="@+id/checar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/btnSair"
+        android:layout_alignStart="@+id/btnSair" />
+
+</RelativeLayout>
